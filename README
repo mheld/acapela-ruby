@@ -1,7 +1,7 @@
--put acapela.rb in your lib/ folder; assuming that you're using rails, otherwise you're on your own.
+put acapela.rb in your lib/ folder; assuming that you're using rails, otherwise you're on your own.
 
--require 'acapela' in the file you'd like to use the library.
+require 'acapela' in the file you'd like to use the library.
 
--speak("I like cheese") will return a url that points to the MP3 of the file generated. Keep in mind that the thing you download can be really small, so you might end up with a StringIO if you try to open() the url. speak("I like cheese", "bob") will change the speaker from the rather sensible default of rachel22k.
+speak("I like cheese") will return a url that points to the MP3 of the file generated. Keep in mind that the thing you download can be really small, so you might end up with a StringIO if you try to open() the url. speak("I like cheese", "bob") will change the speaker from the rather sensible default of rachel22k.
 
--Included is a downloadMP3(url) function that will coax the downloaded material to be a file. downloadMP3() also returns the file downloaded.
+Included is a downloadMP3(url) function that will coax the downloaded material to be a file. downloadMP3() also returns the file downloaded.
